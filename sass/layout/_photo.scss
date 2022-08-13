@@ -1,0 +1,65 @@
+.photo__wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.photo__text {
+  position: absolute;
+  top: 0;
+  @include font(400, 18px, 1.55, 00.03em);
+  color: var(--third-color);
+  background: rgba(33, 150, 243, 0.9);
+  padding: 0 24px;
+  transform: translateY(100%);
+  height: 294px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.photo__tetl {
+  @include font(700, 18px, 2, 0.06em);
+  color: var(--first-color);
+}
+
+.photo__afer-tetl {
+  @include font(400, 16px, 1.87, 0.03em);
+  color: var(--second-color);
+  margin-top: 4px;
+}
+.photo__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px -15px;
+  & > .photo__item {
+    margin: 15px 15px;
+    flex-basis: calc(100% / 3 - 30px);
+  }
+  & > .photo__item:nth-child(n + 7) {
+    margin-bottom: 0px;
+  }
+}
+
+.photo__container {
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--photo__border);
+  border-top: 0px;
+  border-left: 1px solid var(--photo__border);
+  border-right: 1px solid var(--photo__border);
+}
+
+.photo__efect {
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus,
+  &:hover {
+    box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%),
+      1px 4px 6px rgb(0 0 0 / 16%);
+    cursor: pointer;
+    display: block;
+    & .photo__text,
+    & .photo__text {
+      transform: translateY(0%);
+    }
+  }
+}

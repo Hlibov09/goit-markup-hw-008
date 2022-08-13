@@ -1,0 +1,103 @@
+.header {
+  display: flex;
+  height: 80px;
+  margin: 0px auto;
+  left: 0px;
+  top: 0px;
+  border-bottom: 1px solid var(--border-bottom);
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+}
+.nav__logo {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  @include font(700, 26px, 1.19, 0.03em);
+  color: var(--accent-color);
+  margin-right: 93px;
+}
+.nav {
+  display: flex;
+  align-items: center;
+}
+.nav__list {
+  display: flex;
+}
+.nav__link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
+}
+
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo-accent {
+  color: var(--first-color);
+}
+
+.line {
+  position: relative;
+  color: var(--accent-color);
+  &::after {
+    content: '';
+    background: var(--accent-color);
+    border-radius: 2px;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    bottom: 0;
+    margin-bottom: -1px;
+  }
+}
+
+.adress {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  a {
+    color: var(--second-color);
+    display: flex;
+    align-items: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+  & :not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav__item a {
+  color: var(--first-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+  &.line {
+    position: relative;
+    color: var(--accent-color);
+  }
+}
+
+.nav__item,
+.adress {
+  @include font(500, 14px, 1.14, 0.02em);
+}
+
+.adress__icon {
+  margin-right: 10px;
+  fill: currentColor;
+  vertical-align: middle;
+}

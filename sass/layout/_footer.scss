@@ -1,0 +1,154 @@
+.footer {
+  background: var(--background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  &-container {
+    display: flex;
+  }
+}
+.subs {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.wrap__logo {
+  font-family: 'Raleway';
+  @include font(700, 26px, 1.93, 0.03em);
+  color: var(--accent-color);
+  margin-bottom: 20px;
+  &-accent {
+    color: var(--third-color);
+  }
+}
+.contact {
+  &__place {
+    color: var(--third-color);
+  }
+  &__place,
+  &__mail,
+  &__tel {
+    @include font(400, 14px, 1.71, 0.03em);
+  }
+  &__mail,
+  &__tel {
+    color: var(--footer-mail-tel-color);
+  }
+  a {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  & :hover,
+  & :focus {
+    color: var(--accent-color);
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+.socium {
+  display: block;
+  margin-top: 12px;
+  margin-left: 70px;
+}
+
+.socium__soc {
+  @include font(700, 14px, 1.14, 0.03em);
+  color: var(--third-color);
+  display: block;
+}
+.soc {
+  display: flex;
+  justify-content: center;
+}
+
+.soc__item {
+  margin-left: 10px;
+  margin-top: 20px;
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.soc__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--third-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+
+.soc__icon {
+  fill: currentColor;
+}
+
+.subscription {
+  display: block;
+  margin-left: auto;
+  margin-top: 12px;
+}
+
+.footer-subs {
+  @include font(700, 14px, 1.14, 0.03em);
+  color: var(--third-color);
+  display: block;
+}
+
+.subs__input {
+  height: 50px;
+  width: 358px;
+  padding: 15px 16px;
+  @include font(400, 16px, 1.25, 0.03em);
+  color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  resize: none;
+  outline: transparent;
+  display: flex;
+  align-items: center;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus {
+    border-color: var(--accent-color);
+  }
+}
+.subs__icon {
+  fill: currentColor;
+}
+.contract:focus,
+.contract:hover {
+  text-decoration: none;
+}
+
+.subs__button {
+  width: 200px;
+  height: 50px;
+  @include font(700, 16px, 1.88, 0.06em);
+  text-align: center;
+  padding: 10px 28px 10px 29px;
+  display: flex;
+  align-items: center;
+  color: var(--third-color);
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 12px;
+  display: flex;
+  border: 0;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background: var(--service-button);
+  }
+}

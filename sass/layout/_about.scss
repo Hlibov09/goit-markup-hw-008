@@ -1,0 +1,31 @@
+.about.section {
+  padding-top: 0;
+}
+
+.about__list {
+  display: flex;
+  margin: 0px -15px;
+  & > .about__item {
+    flex-basis: calc(100% / 3 - 30px);
+    margin: 0px 15px;
+  }
+}
+
+.about__wrap {
+  position: relative;
+}
+
+.about__item-comment {
+  @include font(700, 14px, 1.14, 0.03em);
+  color: var(--third-color);
+  background: rgba(47, 48, 58, 0.8);
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  text-transform: uppercase;
+  bottom: 0;
+  left: 0;
+}

@@ -1,0 +1,31 @@
+.benefits__titel {
+  @include font(700, 14px, 1.14, 0.03em);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.benefits__after-titel {
+  @include font(400, 14px, 1.71, 0.03em);
+  color: var(--second-color);
+}
+
+.benefits__list {
+  /*
+  display: flex;*/
+  margin: 0 -15px;
+  & > .benefits__item {
+    flex-basis: calc(100% / 4 - 30px);
+    margin: 0 15px;
+  }
+}
+
+.benefits__logo {
+  /*
+  display: flex;*/
+  margin-bottom: 30px;
+  justify-content: center;
+  background: #f5f4fa;
+  border-radius: 4px;
+  height: 120px;
+  align-items: center;
+}
