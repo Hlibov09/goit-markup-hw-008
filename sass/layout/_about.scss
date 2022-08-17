@@ -1,5 +1,8 @@
 .about.section {
   padding-top: 0;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
 }
 
 .about__list {

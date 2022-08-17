@@ -14,7 +14,7 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: var(--first-color);
 }
 
@@ -97,7 +97,7 @@ img {
 }
 
 .nav__logo {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
@@ -137,7 +137,7 @@ img {
   color: var(--accent-color);
 }
 .line::after {
-  content: "";
+  content: '';
   background: var(--accent-color);
   border-radius: 2px;
   position: absolute;
@@ -159,7 +159,8 @@ img {
   align-items: center;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.adress a:hover, .adress a:focus {
+.adress a:hover,
+.adress a:focus {
   color: var(--accent-color);
 }
 .adress :not(:last-child) {
@@ -174,7 +175,8 @@ img {
   color: var(--first-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.nav__item a:hover, .nav__item a:focus {
+.nav__item a:hover,
+.nav__item a:focus {
   color: var(--accent-color);
 }
 .nav__item a.line {
@@ -198,7 +200,8 @@ img {
 
 .service {
   background: var(--background-color);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/img-5.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../img/img-5.jpg);
   background-repeat: no-repeat;
   background-position: center;
   padding-top: 200px;
@@ -237,7 +240,8 @@ img {
   border: 0;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.service-button:hover, .service-button:focus {
+.service-button:hover,
+.service-button:focus {
   background: var(--service-button);
 }
 
@@ -346,7 +350,8 @@ img {
 .command__list > .command__item {
   flex-basis: calc(25% - 30px);
   margin: 0 15px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -373,15 +378,18 @@ img {
   color: var(--border-client);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.command__soc-link:hover, .command__soc-link:focus {
+.command__soc-link:hover,
+.command__soc-link:focus {
   background-color: var(--accent-color);
 }
 
 .command__soc-icon {
   fill: currentColor;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.command__soc-link:hover .command__soc-icon, .command__soc-link:focus .command__soc-icon {
+.command__soc-link:hover .command__soc-icon,
+.command__soc-link:focus .command__soc-icon {
   color: var(--third-color);
 }
 
@@ -406,10 +414,12 @@ img {
   border: 1px solid var(--border-client);
   border-radius: 4px;
   height: 92px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: var(--border-client);
 }
-.client__logo-link:hover, .client__logo-link:focus {
+.client__logo-link:hover,
+.client__logo-link:focus {
   fill: var(--accent-color);
   border-color: var(--accent-color);
 }
@@ -431,7 +441,7 @@ img {
 }
 
 .wrap__logo {
-  font-family: "Raleway";
+  font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
   line-height: 1.93;
@@ -446,19 +456,23 @@ img {
 .contact__place {
   color: var(--third-color);
 }
-.contact__place, .contact__mail, .contact__tel {
+.contact__place,
+.contact__mail,
+.contact__tel {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-.contact__mail, .contact__tel {
+.contact__mail,
+.contact__tel {
   color: var(--footer-mail-tel-color);
 }
 .contact a {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contact :hover, .contact :focus {
+.contact :hover,
+.contact :focus {
   color: var(--accent-color);
 }
 .contact__item:not(:last-child) {
@@ -504,7 +518,8 @@ img {
   color: var(--third-color);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.soc__link:hover, .soc__link:focus {
+.soc__link:hover,
+.soc__link:focus {
   background-color: var(--accent-color);
 }
 
@@ -568,7 +583,6 @@ img {
   letter-spacing: 0.06em;
   text-align: center;
   padding: 10px 28px 10px 29px;
-  display: flex;
   align-items: center;
   color: var(--third-color);
   background: var(--accent-color);
@@ -580,12 +594,13 @@ img {
   border: 0;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.subs__button:hover, .subs__button:focus {
+.subs__button:hover,
+.subs__button:focus {
   background: var(--service-button);
 }
 
 .navigation__button {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -598,14 +613,16 @@ img {
   display: block;
   border: 0;
   border-radius: 4px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navigation__item :hover,
 .navigation__item :focus {
   color: var(--third-color);
   background: var(--accent-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .navigation__item:not(:first-child) {
@@ -668,7 +685,7 @@ img {
   margin: 15px 15px;
   flex-basis: calc(33.3333333333% - 30px);
 }
-.photo__list > .photo__item:nth-child(n+7) {
+.photo__list > .photo__item:nth-child(n + 7) {
   margin-bottom: 0px;
 }
 
@@ -683,12 +700,17 @@ img {
 .photo__efect {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.photo__efect:focus, .photo__efect:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+.photo__efect:focus,
+.photo__efect:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
   display: block;
 }
-.photo__efect:focus .photo__text, .photo__efect:focus .photo__text, .photo__efect:hover .photo__text, .photo__efect:hover .photo__text {
+.photo__efect:focus .photo__text,
+.photo__efect:focus .photo__text,
+.photo__efect:hover .photo__text,
+.photo__efect:hover .photo__text {
   transform: translateY(0%);
 }
 
@@ -699,7 +721,8 @@ img {
   height: 100%;
   width: 100%;
   background: rgba(0, 0, 0, 0.2);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop .is-hidden .modal {
   transform: translate(-50%, -50%) scale(0);
@@ -746,7 +769,8 @@ img {
   fill: #000000;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-close-btn:focus .modal-close-icon, .modal-close-btn:hover .modal-close-icon {
+.modal-close-btn:focus .modal-close-icon,
+.modal-close-btn:hover .modal-close-icon {
   fill: var(--accent-color);
 }
 
@@ -839,7 +863,8 @@ img {
   border: 0;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-button:hover, .modal-button:focus {
+.modal-button:hover,
+.modal-button:focus {
   background-color: var(--service-button);
 }
 
@@ -919,4 +944,4 @@ img {
   background-position: center;
   border: none;
 }
-*//*# sourceMappingURL=main.css.map */
+*/ /*# sourceMappingURL=main.css.map */

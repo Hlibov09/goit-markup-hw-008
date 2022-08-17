@@ -1,4 +1,7 @@
 .command {
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
   background: var(--background-command);
   &__name {
     @include font(500, 16px, 1.18, 0.03em);
@@ -13,7 +16,8 @@
   }
 
   &__list {
-    display: flex;
+    /*
+    display: flex;*/
     margin: 0px -15px;
   }
   &__container {

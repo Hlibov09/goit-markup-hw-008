@@ -1,12 +1,18 @@
-.benefits__titel {
-  @include font(700, 14px, 1.14, 0.03em);
-  text-transform: uppercase;
-  margin-bottom: 10px;
+@media screen and (min-width: 480px) {
+  width: 480px;
+  .benefits__titel {
+    @include font(700, 14px, 1.14, 0.03em);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
 }
 
-.benefits__after-titel {
-  @include font(400, 14px, 1.71, 0.03em);
-  color: var(--second-color);
+@media screen and (min-width: 480px) {
+  width: 480px;
+  .benefits__after-titel {
+    @include font(400, 14px, 1.71, 0.03em);
+    color: var(--second-color);
+  }
 }
 
 .benefits__list {
