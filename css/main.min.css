@@ -478,8 +478,6 @@ img {
   line-height: 1.14;
   letter-spacing: 0.03em;
   margin-bottom: 10px;
-  display: flex;
-  justify-content: center;
   text-transform: uppercase;
 }
 @media screen and (min-width: 768px) {
