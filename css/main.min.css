@@ -250,12 +250,30 @@ img {
   border: 0;
   background-color: var(--first-color);
 }
+
+.menu-open-btn {
+  display: block; /*display: flex;*/
+  margin-left: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  margin-left: auto;
+  border: 0;
+  background-color: var(--third-color);
+}
 @media screen and (min-width: 768px) {
-  .menu-open-btn .close-open-btn {
+  .mob-menu {
     display: none;
   }
 }
-.mob-menu .container {
+@media screen and (min-width: 769px) {
+  .menu-open-btn {
+    display: none;
+  }
+}
+.menu-container {
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -269,16 +287,20 @@ img {
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 0 25px; /*
-  transform: translateX(100%);*/
+  padding: 0 40px;
+  transform: translateX(100%);
   transition: transform var(--transition);
-  z-index: 1;
+  z-index: 100;
 }
 .mob-menu.is-open {
+  /*
+  opacity: 1;
+  pointer-events: initial;
+  visibility: visible;*/
   transform: translateX(0);
 }
 .menu-open__icon {
-  fill: rgb(0, 0, 0);
+  fill: var(--first-color);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -357,7 +379,8 @@ img {
   text-decoration: none;
   margin-right: 10px;
 }
----------- .service {
+
+.service {
   background: var(--background-color);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url('../img/mobile-mini/mobile-desktop.jpg');
@@ -457,6 +480,7 @@ img {
   margin-bottom: 10px;
   display: flex;
   justify-content: center;
+  text-transform: uppercase;
 }
 @media screen and (min-width: 768px) {
   .benefits__titel {
@@ -755,6 +779,7 @@ img {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 .contact__mail,
 .contact__tel {
@@ -788,6 +813,7 @@ img {
   letter-spacing: 0.03em;
   color: var(--third-color);
   display: block;
+  text-transform: uppercase;
 }
 .soc {
   display: flex;
@@ -1114,7 +1140,7 @@ img {
   }
 }
 .modal-close-btn {
-  width: 30px;
+  mob-menuth: 30px;
   height: 30px;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
