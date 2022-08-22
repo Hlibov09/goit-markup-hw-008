@@ -167,7 +167,7 @@ img {
   margin-bottom: -1px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .adress {
     display: none;
   }
@@ -232,9 +232,6 @@ img {
   fill: currentColor;
   vertical-align: middle;
 }
-.mob-menu.is-open {
-  transform: translateX(0);
-}
 .mob-menu__top {
   margin-top: 48px;
 }
@@ -268,7 +265,7 @@ img {
     display: none;
   }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .menu-open-btn {
     display: none;
   }
@@ -293,12 +290,12 @@ img {
   z-index: 100;
 }
 .mob-menu.is-open {
-  /*
   opacity: 1;
   pointer-events: initial;
-  visibility: visible;*/
+  visibility: visible;
   transform: translateX(0);
 }
+
 .menu-open__icon {
   fill: var(--first-color);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
